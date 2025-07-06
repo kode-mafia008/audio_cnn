@@ -56,7 +56,7 @@ class ESC50Dataset(Dataset):
         return len(self.metadata)
 
     def __getitem__(self, idx):
-        row = self.metadata.iloc(idx)
+        row = self.metadata.iloc[idx]
         audio_path = self.data_dir / "audio" / row['filename']
 
         waveform, sample_rate = torchaudio.load(audio_path)
