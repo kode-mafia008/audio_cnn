@@ -5,3 +5,8 @@ tqdm
 numpy
 modal
 tensorboard
+fastapi
+pydantic
+soundfile
+librosa
+requests

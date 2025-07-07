@@ -75,7 +75,7 @@ class ESC50Dataset(Dataset):
 def train():
     from datetime import datetime 
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    log_dir = f'models/tensorboard_logs/run_{timestamp}'
+    log_dir = f'/models/tensorboard_logs/run_{timestamp}'
     writer = SummaryWriter(log_dir)
 
     esc50_dir = Path("/opt/esc50-data")
