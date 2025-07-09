@@ -64,3 +64,34 @@ This project uses the ESC-50 dataset which is available under the Attribution-No
 ## Acknowledgments
 - ESC-50 dataset: https://github.com/karolpiczak/ESC-50
 - Modal for cloud deployment
+ 
+### Deep Learning Model Overview: Audio CNN
+Based on the visualization project we worked on, here's what can be inferred about the underlying deep learning model:
+
+# Model Architecture
+  Convolutional Neural Network (CNN) designed specifically for audio classification
+  Uses a multi-layer architecture with feature extraction through convolutional layers.The visualization shows both main layers and internal sub-layers (as shown in the hierarchical display)
+
+# Input Processing
+  Processes audio as spectrograms (time-frequency representations)
+  Input spectrograms are represented as 2D arrays showing frequency components over time
+  The model likely performs feature extraction directly from these spectrograms
+
+# Feature Extraction
+Multiple convolutional layers extract progressively higher-level features
+Each layer's activations are visualized as feature maps showing what patterns the model recognizes
+The project demonstrates how audio features transform through the network's layers
+
+# Classification Approach
+  Outputs probability distributions across multiple sound classes
+  Based on ESC-50 (Environmental Sound Classification) dataset categories
+  Classes include diverse environmental sounds such as:
+  Animal sounds (dog, rooster, pig)
+  Natural phenomena (rain, sea waves)
+  Human activities (crying baby, sneezing, keyboard typing)
+  Mechanical/industrial sounds (chainsaw, helicopter)
+
+# Model Performance
+  Provides confidence scores for top predictions
+  Allows visualization of which audio features most strongly activate different parts of the network
+  The visualization helps understand what patterns the model identifies in different sound categories

@@ -2,3 +2,4 @@ __pycache__
 __pycache__/train.cpython-312.pyc
 tensorboard_logs/
 node_modules/
+.env
